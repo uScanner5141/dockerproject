@@ -1,7 +1,7 @@
 version: '3.8'
 services:
   internetbanking:
-    image: prasaddevops21/ib-image:latest
+    image: prasaddevops21/intb-image:latest
     ports:
       - "81:80"
     deploy:
@@ -9,7 +9,7 @@ services:
     volumes:
       - /var/lib/internetbanking
   mobilebanking:
-    image: prasaddevops21/mb-image:latest
+    image: prasaddevops21/mob-image:latest
     ports:
       - "82:80"
     deploy:
@@ -17,7 +17,7 @@ services:
     volumes:
       - /var/lib/mobilebanking
   insurance:
-    image: prasaddevops21/in-image:latest
+    image: prasaddevops21/ins-image:latest
     ports:
       - "83:80"
     deploy:
@@ -25,7 +25,7 @@ services:
     volumes:
       - /var/lib/insurance
   loan:
-    image: prasaddevops21/ln-image:latest
+    image: prasaddevops21/loans-image:latest
     ports:
       - "84:80"
     deploy:
